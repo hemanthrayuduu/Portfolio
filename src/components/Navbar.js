@@ -37,9 +37,9 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+      <Container fluid>
+        <Navbar.Brand href="/" className="d-flex align-items-center me-5">
+          <img src={logo} className="img-fluid logo" alt="HR logo" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -92,19 +92,21 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            {/* Blog section commented out
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
+                href="https://hemanthrayudu.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
             </Nav.Item>
+            */}
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/hemanthrayuduu/Portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >

@@ -4,27 +4,52 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiSlack,
-  SiVercel,
   SiMacos,
+  SiGooglecolab,
+  SiKaggle,
+  SiGithub,
+  SiLinux,
 } from "react-icons/si";
+import { FaRobot, FaDatabase, FaChartBar, FaBrain, FaLaptopCode } from "react-icons/fa";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      {/* Development Environment */}
+      <Col xs={4} md={2} className="tech-icons" data-tech="VS Code">
         <SiVisualstudiocode />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-tech="macOS">
+        <SiMacos />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" data-tech="Linux">
+        <SiLinux />
+      </Col>
+      
+      {/* AI/ML Development Tools */}
+  
+      <Col xs={4} md={2} className="tech-icons" data-tech="Google Colab">
+        <SiGooglecolab />
+      </Col>
+      
+      {/* AI Application Building */}
+      
+      <Col xs={4} md={2} className="tech-icons" data-tech="Postman">
         <SiPostman />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+      
+      {/* ML Experiments & Data */}
+    
+      <Col xs={4} md={2} className="tech-icons" data-tech="Kaggle">
+        <SiKaggle />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+      
+      {/* Collaboration & Version Control */}
+      <Col xs={4} md={2} className="tech-icons" data-tech="GitHub">
+        <SiGithub />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" data-tech="Slack">
+        <SiSlack />
       </Col>
     </Row>
   );

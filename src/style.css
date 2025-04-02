@@ -85,7 +85,7 @@ button:focus {
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
+  padding: 0.5rem 2rem !important;
   font-size: 1.2rem !important;
 }
 
@@ -155,8 +155,17 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 4em !important;
+  width: 6em !important;
+  object-fit: contain !important;
+  margin-right: 1em !important;
+  transition: transform 0.3s ease-in-out !important;
+  max-width: none !important;
+}
+
+.logo:hover {
+  transform: scale(1.05) !important;
+  filter: drop-shadow(0 0 5px rgba(199, 112, 240, 0.7)) !important;
 }
 
 .navbar-nav .nav-link {
@@ -563,11 +572,21 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+  position: relative !important;
 }
 
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;
+  }
+  
+  .tech-icons::after {
+    font-size: 12px !important;
+    top: -30px !important;
+  }
+  
+  .tech-icons:hover::after {
+    top: -35px !important;
   }
 }
 
@@ -575,6 +594,36 @@ button:focus {
   transform: scale(1.05) !important;
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+
+.tech-icons::after {
+  content: attr(data-tech);
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: white !important;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 9999;
+  text-shadow: 0 0 5px #c770f0;
+  pointer-events: none;
+  border: 1px solid rgba(199, 112, 240, 0.5);
+  letter-spacing: 0.5px;
+}
+
+.tech-icons:hover::after {
+  opacity: 1;
+  visibility: visible;
+  top: -45px;
+  box-shadow: 0 0 15px rgba(199, 112, 240, 0.8);
 }
 .tech-icon-images {
   padding: 20px !important;
