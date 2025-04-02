@@ -96,17 +96,6 @@ This project is open source and available under the MIT License.
 
 ---
 
-<div align="center">
-  <p>If you found this project helpful, please consider giving it a ⭐!</p>
-  
-  [![GitHub stars](https://img.shields.io/github/stars/hemanthrayuduu/Portfolio?style=social)](https://github.com/hemanthrayuduu/Portfolio/stargazers)
-</div>
-
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://Hemanth Rayudu.vercel.app/" target="_blank">Hemanth Rayudu.tech</a>
-</h2>
-
 <br/>
 
 <center>
