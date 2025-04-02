@@ -5,7 +5,7 @@
 A modern, responsive portfolio website showcasing my expertise in Machine Learning, AI, and Software Engineering.
 
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Demo" src="./Images/readme-img.png" />
 </div>
 
 ## 🛠️ Built With
